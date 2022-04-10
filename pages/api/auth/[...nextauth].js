@@ -6,9 +6,9 @@ import { FaunaAdapter } from '@next-auth/fauna-adapter'
 
 const client = new FaunaClient({
     secret: process.env.FAUNADB_SECRET_KEY,
-    scheme: "http",
+    // scheme: "http",
     domain: "db.us.fauna.com",
-    port: 8443
+    // port: 8443
 })
 
 export default NextAuth({
